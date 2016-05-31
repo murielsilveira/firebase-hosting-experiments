@@ -24,5 +24,11 @@
         fullName: 'John Doe'
       });
     </script>
+    <script type="text/javascript">
+      Raygun.trackEvent('pageView', { path: '/pulse.html' });
+    </script>
+    <script type="text/javascript">
+      rg4js('pageView', { path: '/' + foo })
+    </script>
   </body>
 </html>
