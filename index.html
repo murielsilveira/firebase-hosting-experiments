@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Heeey</title>
+  </head>
+  <body>
+    <h1>Heeey</h1>
+    <!-- Crash Reporting -->
+    <script type="text/javascript">
+      !function(a,b,c,d,e,f,g,h){a.RaygunObject=e,a[e]=a[e]||function(){
+      (a[e].o=a[e].o||[]).push(arguments)},f=b.createElement(c),g=b.getElementsByTagName(c)[0],
+      f.async=1,f.src=d,g.parentNode.insertBefore(f,g),h=a.onerror,a.onerror=function(b,c,d,f,g){
+      h&&h(b,c,d,f,g),g||(g=new Error(b)),a[e].q=a[e].q||[],a[e].q.push({
+      e:g})}}(window,document,"script","//cdn.raygun.io/raygun4js/raygun.min.js","rg4js");
+    </script>
+    <script type="text/javascript">
+      rg4js('apiKey', 'QsJF5sAHzVw8iOH/Bvaa4Q==');
+      rg4js('enableCrashReporting', true);
+      rg4js('setUser', {
+        identifier: 'john',
+        isAnonymous: false,
+        email: 'john@email.com',
+        firstName: 'John',
+        fullName: 'John Doe'
+      });
+    </script>
+    <script type="text/javascript">
+      'use strict'
+      a = 1
+    </script>
+  </body>
+</html>
